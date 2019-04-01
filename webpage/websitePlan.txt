@@ -1,0 +1,67 @@
+first off, open in chrome. main page pictures only work in chrome, for some reason.
+MAIN
+====
+I am happy with the main page as is. I might add a fourth section for "Search" later, but I'm not really fussed about it.
+
+ANIME/CARTOON/FILM
+==================
+These are carbon copies of each other, so one and clones really.
+I like the layout the page is in, want to add 3 more rows at least, so there would be 20 items per page. Might add more (there is going to be a few thousand records after all).
+for each record, I would like to be able to read in an image url, title and text from the record in question, but I can enter them manually if need be.
+The bottom index bar ("<< 1 2 >>") is fine, might make it look a bit nicer and center it. It will have to be one of those "show a few either side" cases though. like "<< . . 9 10 11 12 13 . . >>", and move with the page.
+the individual records need to be added in ingroups of whatever number (say 20) from the record list, but need to be fluid, so that if a new record is added in between them, it will be positioned correctly. example: page one, records alpha, beta, delta, epsilon. new record gamma entered. new page one, records alpha, beta, gamma, delta.
+
+RECORDS
+=======
+The records need to be stored as sort of like arrays. each record containing the following info: name, altName, Seasons, Episodes, Specials, Status(Complete/Ongoing/Hiatus), Viewed(Yes/No/Partially), Synopsis, Review, PictureUrl(images are to be stored in the images folder accessible from the main menu, inside category folders, just so you know the path you wll need for when they are called).
+I don't mind what variable type each one is in, whichever works best.
+I don't know if they should be three separate lists, of all in one large list. Again, whichever is easiest to create, but I presume there would need to be an added var for "Type" if they are all contained in one list.
+I'm not sure what the best way to store these would be,  need to make sure it can run offline, that's a must. Preferabbly, some way of simply bringing up the main page would be ideal, as opposed to setting npm starts and such, but anyway to get it working is fine, as long as it can be used offline.
+
+INDIVIDUAL RECORD PAGES
+=======================
+The individual record pages should be based off of the "portfolia-item.html" page. Picture placeholder to the right, content to the left and below.
+The content should be:
+Name:_________________________	 -----------------------
+Alt Name:_____________________	|			|
+Seasons:__ Eps/Specs:___/__	|			|
+Status:__________ Viewed:_____	|			|
+Synopsis:_____________________	|			|
+______________________________	|			|
+______________________________	|			|
+Review:_______________________	|			|
+______________________________	|			|
+______________________________	 -----------------------
+
+Links to Related Records:
+
+  --------------	 ---------------	 ---------------	
+ |		|	|		|	|		| 
+ |		|	|		|	|		| 
+ |		|	|		|	|		| 
+  --------------	 ---------------	 ---------------	
+
+The links to related records part should be populated with anything that has a similar tag (i.e. a Naruto movie will be linked to the Naruto show; same with the spin off Naruto Shippuden and Boruto shows), so this could potentially have a handful of records, or none.
+I would like this to look like a framed box, 3/4 picture, 1/4 the name of the record, that you can click on to go to that record. I am not sure how to add these however, other than manually, Which is fine.
+Obviously, remove the episodes/specials sections for films.
+
+SEARCH
+======
+The search page is the least concerning. I would like to have it more as a tiered list page, with a search function to the right, that can allow you to search based on any of the record headings.
+The tier list would be three options (Anime/Cartoon/Film), each option would display a list of all the records anglish names. I'm not sure whether the list should be one vertical line or two or three vertical lines, whichever is easiest/looks best.
+The second tier of options would be alphabetical, looking something similar to Main_Copy.html. Choosing whichever option here will load only that group from the list. The second tier iteams are 'All', '0-9', each letter of the alphabet, and '#' for any that start with symbols.
+So example would be click on anime, all anime appear, click on cartoon, all anime disappear and cartoon appear, then click "C" and only the cartoons begining in "C" appear.
+A good example of what I'm looking for is here:
+https://www.khwiki.com/darkside
+Notice the tabs above the picture to the right, the picture tab has it's own sub section of three tabs. And if you go over to stats, it has it's own four tabs (the second one even has a third tier of tabs). Something like this, so there would be anime cartoon and film, and when you click on any of them, they bring up their own second tier tabs of the alphabet characters. If something like this is possible, great. If not, or if it is too difficult to do, or if you have a better idea, go with that.
+Again, the "Search part of this page is not hugely important right now. It's more of a "List page, tbh.
+
+FINAL PARTS
+===========
+I would like some form of "404 not found/ nothing here yet" page, something like the one provided but just with not text other than a link bar to backtrack your position ("Home/Anime/whatever").
+I wouldn't be opposed to some kind of in app "add Record" function down the line, where you can create a new record and keep it stored, purely from the site. but the idea of writing it permanently, sorting it so it is in the correct position alphabetically, all that jazz sounds taxing, and I am really fine with records being manully added for now. just something to think about for later, possibly.
+
+
+So, that's what I am looking for. Use as much or as little of the pages provided if they can be of any help to you. What I am looking for is the main page, anime/cartoon/film pages, and a record page or two as a template, with some dummy data in it. The main thing would be the record set up, how it is stored and called.
+
+Thanken you :D
