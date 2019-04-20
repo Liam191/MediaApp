@@ -1,8 +1,8 @@
 {
-  "name": "alexandersite",
+  "name": "media-app",
   "version": "1.0.0",
   "description": "",
-  "main": "animeApp.config.js",
+  "main": "app.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"

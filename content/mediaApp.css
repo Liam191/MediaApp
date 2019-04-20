@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border-radius: 0px !important;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #333;
+    font: 15px arial, sans-serif;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: #bbb;
+    padding: 1px;
+    overflow-y: hidden;
+}
+
+.menu{
+    background-color: transparent;
+    height: 30px;
+    width: 100%;
+    padding-top: 4px;
+    -webkit-app-region: drag;
+}
+.menu .app-name{
+    margin: auto;
+    margin-top: 2px;
+    text-align: center;
+}
+.menu .menu-buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu .menu-button{
+    float: left;
+    height: 20px;
+    width: 30px;
+    color: white;
+    border: 1px solid #bbb;
+    -webkit-app-region: no-drag; /* Required to make buttons and other elements clickable when using "-webkit-app-region: drag;" on parent */
+}
+.menu .menu-button.menu-button-close{
+    width: 40px;
+    background-color: rgb(211, 39, 39);
+}
+
+div[ng-view]{
+    overflow-y: auto;
+    background-color: #ddd;
+    height: calc(100% - 30px);
+    width: 100%;
+}

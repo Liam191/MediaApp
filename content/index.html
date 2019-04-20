@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="mediaApp">
+  <head>
+    <script type="application/javascript" src="res/angular/angular.js"></script>
+    <script type="application/javascript" src="res/angular/angular-resource.js"></script>
+    <script type="application/javascript" src="res/angular/angular-animate.js"></script>
+    <script type="application/javascript" src="res/bootstrap/ui-bootstrap-2.5.0.min.js"></script>
+
+    <script type="application/javascript" src="app/mediaApp.js"></script>
+    <script type="application/javascript" src="app/main.module.js"></script>
+    <script type="application/javascript" src="app/appMenuBar.component.js"></script>
+    <script type="application/javascript" src="app/ipcRenderer.service.js"></script>
+
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="mediaApp.css">
+
+    <base href="./">
+</head>
+<body>
+    <div class="wrapper">
+        <app-menu-bar></app-menu-bar>
+        <div ng-view></div>
+    </div>
+</body>
+</html>
